@@ -55,11 +55,12 @@ body {
   width: 100%;
 }
 .leftside {
-  width: 90%;
+  width: 95%;
   text-align: left;
   margin: auto;
 }
 .short {
+  width: 100%;
   height: 300px;
 }
 #bottom {
