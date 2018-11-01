@@ -1,0 +1,71 @@
+body {
+  background-color: #2877C7;
+}
+#top {
+  width: 100%;
+  color: white;
+  background-color: #2877C7;
+  text-align: center;
+}
+#icon {
+  width: 180px;
+}
+.banner {
+  font-size: 32px;
+  margin: 1px;
+}
+.text {
+  font-size: 12px;
+  margin: 1px;
+  padding-top: 30px;
+  padding-bottom: 10px;
+}
+.reader {
+  margin: 0px;
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+#middle {
+  width: 100%;
+  color: black;
+  background-color: white;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+#long {
+  height: auto;
+}
+.picture {
+  background-color: gray;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+.images {
+  width: 100%;
+}
+.map {
+  width: 100%;
+  height: auto;
+}
+.contents {
+  margin: 0px;
+  height: 100%;
+  width: 100%;
+}
+.leftside {
+  width: 100%;
+  text-align: left;
+  margin: auto;
+}
+.short {
+  height: 300px;
+}
+#bottom {
+  font-size: 12px;
+  width: 100%;
+  color: white;
+  background-color: #2877C7;
+  text-align: center;
+}
