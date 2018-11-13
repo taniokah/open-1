@@ -59,6 +59,7 @@ body {
 .long {
   width: 100%;
   height: auto;
+  min-height: 400px;
 }
 .short {
   width: 100%;
