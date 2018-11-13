@@ -33,9 +33,6 @@ body {
   padding-top: 10px;
   padding-bottom: 30px;
 }
-#long {
-  height: auto;
-}
 .picture {
   background-color: gray;
   text-align: center;
@@ -58,6 +55,10 @@ body {
   width: 95%;
   text-align: left;
   margin: auto;
+}
+.long {
+  width: 100%;
+  height: auto;
 }
 .short {
   width: 100%;
