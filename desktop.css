@@ -33,9 +33,6 @@ body {
   padding-top: 10px;
   padding-bottom: 30px;
 }
-#long {
-  height: 500px;
-}
 .picture {
   background-color: gray;
   text-align: center;
@@ -60,6 +57,9 @@ body {
   min-width: 400px;
   text-align: left;
   margin: auto;
+}
+.long {
+  height: auto;
 }
 .short {
   height: 400px;
