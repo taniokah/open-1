@@ -1,7 +1,7 @@
 body {
   background-color: #2877C7;
 }
-#top {
+.top {
   width: 100%;
   color: white;
   background-color: #2877C7;
@@ -25,16 +25,13 @@ body {
   font-size: 12px;
   padding-bottom: 10px;
 }
-#middle {
+.middle {
   width: 100%;
   color: black;
   background-color: white;
   text-align: center;
   padding-top: 10px;
   padding-bottom: 30px;
-}
-#long {
-  height: auto;
 }
 .picture {
   background-color: gray;
@@ -59,10 +56,13 @@ body {
   text-align: left;
   margin: auto;
 }
+.long {
+  height: auto;
+}
 .short {
   height: 300px;
 }
-#bottom {
+.bottom {
   font-size: 12px;
   width: 100%;
   color: white;
