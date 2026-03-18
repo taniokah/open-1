@@ -23,6 +23,7 @@
 | U-16プログラミングコンテスト | 10月 | 小学生・中学生 | [Webサイト](https://www.anan-nct.ac.jp/event/45782/) |
 | AITeCデータサイエンスコンテスト | 10月 | 中学生・高校生・大学生・大学院生 | [Webサイト](https://ds-education.com/data-science-event/1498/) |
 | 全国情報教育コンテスト（全ぜん情じょうコン） | 11月 | 中学生〜高校生 | [Webサイト](https://zenjyocon.jp/) |
+| 科学の甲子園	| 11月 | 高校生 |	[Webサイト](https://koushien.jst.go.jp/koushien/) |
 | 全国高校生マイプロジェクトアワード | 12月 | 高校生 | [Webサイト](https://myprojects.jp/) |
 | JAPAN AI CUP | 12月 | 誰でも | [Webサイト](https://www.ai-gakkai.or.jp/aicup/) |
 | Why!?プログラミングフェス | - | 小学生 | [Webサイト](https://edu.web.nhk/school/sougou/programming/) |
