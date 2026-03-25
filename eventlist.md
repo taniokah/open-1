@@ -2,6 +2,7 @@
 
 | イベント名称 | 申込時期 | 対象者 | 概要 |
 |---|---|---|---|
+| Coolest Projects Japan | 1月 | 18歳以下 | [Webサイト](https://coolestprojects2026.coderdojo.jp/) |
 | Web×IoTメイカーズチャレンジPLUS in 徳島 (2025) | 2月 | 誰でも | [Webサイト](https://webiotmakers.github.io/2025/) |
 | 情報処理推進機構 未踏IT人材発掘・育成事業 | 3月 | 25歳未満 | [Webサイト](https://www.ipa.go.jp/jinzai/mitou/it/index.html) |
 | 一般社団法人 未踏 未踏ジュニア | 3月 | 17歳以下 | [Webサイト](https://jr.mitou.org/) |
