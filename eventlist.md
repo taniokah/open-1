@@ -8,7 +8,7 @@
 | 情報処理推進機構 未踏IT人材発掘・育成事業 | 3月 | 25歳未満 | [Webサイト](https://www.ipa.go.jp/jinzai/mitou/it/index.html) |
 | 一般社団法人 未踏 未踏ジュニア | 3月 | 17歳以下 | [Webサイト](https://jr.mitou.org/) |
 | 全国物理コンテスト 物理チャレンジ！ | 4月 | 中学生・高校生 | [Webサイト](https://www.jpho.jp/) |
-| 全国小学生プログラミング大会 ゼロワングランドスラム | 小学生 | [Webサイト](https://01-grandslam.jp/) |
+| 全国小学生プログラミング大会 ゼロワングランドスラム | 5月 | 小学生 | [Webサイト](https://01-grandslam.jp/) |
 | DISCO Equipment Coding Contest | 5月 | 誰でも | [Webサイト](https://news.mynavi.jp/techplus/lp/2026/enterprise/decc_2026/) |
 | プログラミング甲子園 | 6月 | 小学生〜高校生 | [Webサイト](https://programming-koshien.com/) |
 | 神戸大学 中高生データサイエンスコンテスト | 6月 | 中学生〜高校生 | [Webサイト](https://www.cmds.kobe-u.ac.jp/events/2025/2025_school_student_ds_contest/index.html) |
