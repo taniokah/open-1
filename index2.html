@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CoderDojo Tokushima | Code is Ninja</title>
+  <meta name="description" content="CoderDojo Tokushima コーダー道場徳島は、徳島で小学生、中学生、高校生向けにプログラミングを学ぶ無償の道場です。">
+  <style>
+    :root{
+      --bg:#06050a;
+      --panel:rgba(255,255,255,.075);
+      --panel-strong:rgba(255,255,255,.13);
+      --text:#f8f7ff;
+      --muted:#bfc0d9;
+      --line:rgba(255,255,255,.22);
+      --neon:#77f7ff;
+      --pink:#ff4fd8;
+      --lime:#c8ff4d;
+      --orange:#ff9d3d;
+      --shadow:0 24px 80px rgba(0,0,0,.42);
+      --radius:28px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      color:var(--text);
+      font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Yu Gothic",Meiryo,sans-serif;
+      line-height:1.75;
+      background:
+        radial-gradient(circle at 12% 12%, rgba(119,247,255,.28), transparent 30%),
+        radial-gradient(circle at 86% 18%, rgba(255,79,216,.25), transparent 27%),
+        radial-gradient(circle at 60% 90%, rgba(200,255,77,.16), transparent 32%),
+        linear-gradient(135deg, #050508 0%, #11112a 52%, #070712 100%);
+      min-height:100vh;
+      overflow-x:hidden;
+    }
+    body:before{
+      content:"";
+      position:fixed; inset:0;
+      pointer-events:none;
+      background-image:
+        linear-gradient(rgba(255,255,255,.045) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,.045) 1px, transparent 1px);
+      background-size:48px 48px;
+      mask-image:linear-gradient(to bottom, rgba(0,0,0,.9), rgba(0,0,0,.18));
+      z-index:-2;
+    }
+    body:after{
+      content:"忍者になる / code / create / share / Tokushima";
+      position:fixed;
+      right:-8vw; bottom:8vh;
+      color:rgba(255,255,255,.045);
+      font-size:clamp(44px, 9vw, 140px);
+      font-weight:900;
+      line-height:.9;
+      width:58vw;
+      transform:rotate(-8deg);
+      z-index:-1;
+    }
+    a{color:var(--neon); text-decoration:none}
+    a:hover{color:var(--lime); text-decoration:underline}
+    .wrap{width:min(1120px, calc(100% - 32px)); margin:auto}
+    .nav{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter:blur(18px);
+      background:rgba(6,5,10,.64);
+      border-bottom:1px solid var(--line);
+    }
+    .nav-inner{display:flex; justify-content:space-between; align-items:center; gap:16px; padding:12px 0}
+    .brand{font-weight:900; letter-spacing:.04em}
+    .nav-links{display:flex; gap:14px; flex-wrap:wrap; font-size:14px}
+    .hero{position:relative; padding:88px 0 56px}
+    .hero-grid{display:grid; grid-template-columns:1.1fr .9fr; gap:36px; align-items:center}
+    .eyebrow{display:inline-flex; gap:8px; align-items:center; color:#050508; background:var(--lime); padding:6px 12px; border-radius:999px; font-weight:800; transform:rotate(-2deg)}
+    h1{
+      margin:22px 0 18px;
+      font-size:clamp(48px, 9vw, 118px);
+      line-height:.86;
+      letter-spacing:-.08em;
+      text-transform:uppercase;
+    }
+    .glitch{position:relative; text-shadow:3px 0 var(--pink), -3px 0 var(--neon)}
+    .lead{font-size:clamp(18px, 2.6vw, 28px); color:var(--text); max-width:720px}
+    .lead strong{color:var(--lime)}
+    .hero-actions{display:flex; gap:14px; flex-wrap:wrap; margin-top:28px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      min-height:48px; padding:10px 18px;
+      border-radius:999px; border:1px solid var(--line);
+      background:var(--panel); color:var(--text); font-weight:800;
+      box-shadow:var(--shadow);
+    }
+    .btn.primary{background:linear-gradient(135deg, var(--pink), var(--orange)); color:white; border:0}
+    .surreal-card{
+      position:relative;
+      min-height:420px;
+      border-radius:42px;
+      background:linear-gradient(150deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+      overflow:hidden;
+    }
+    .surreal-card:before{content:""; position:absolute; inset:12%; border:2px dashed rgba(255,255,255,.24); border-radius:50%; transform:rotate(18deg)}
+    .surreal-card:after{content:"</>"; position:absolute; right:28px; top:22px; color:var(--lime); font-size:52px; font-weight:900}
+    .ninja-img{position:absolute; left:50%; top:52%; width:min(74%, 360px); transform:translate(-50%,-50%) rotate(-6deg); filter:drop-shadow(0 30px 38px rgba(0,0,0,.55))}
+    .bubble{position:absolute; left:26px; bottom:28px; max-width:250px; padding:14px 16px; border-radius:20px 20px 20px 4px; background:rgba(255,255,255,.92); color:#080810; font-weight:900; transform:rotate(3deg)}
+    section{padding:52px 0}
+    .section-title{display:flex; align-items:end; justify-content:space-between; gap:16px; margin-bottom:20px}
+    h2{margin:0; font-size:clamp(28px, 4vw, 52px); line-height:1; letter-spacing:-.04em}
+    .sub{color:var(--muted); margin:8px 0 0}
+    .grid{display:grid; grid-template-columns:repeat(12,1fr); gap:18px}
+    .card{
+      grid-column:span 6;
+      padding:24px;
+      border-radius:var(--radius);
+      background:var(--panel);
+      border:1px solid var(--line);
+      box-shadow:var(--shadow);
+    }
+    .card.wide{grid-column:span 12}
+    .card.third{grid-column:span 4}
+    .event{background:linear-gradient(135deg, rgba(119,247,255,.14), rgba(255,79,216,.12)); border-color:rgba(119,247,255,.36)}
+    .event h3,.card h3{margin:0 0 8px; font-size:24px}
+    .mono{font-family:ui-monospace,SFMono-Regular,Menlo,Consolas,monospace; color:var(--lime)}
+    .dojo-list{display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin-top:18px}
+    .dojo-list div{padding:12px 14px; border-radius:16px; background:rgba(0,0,0,.22); border:1px solid rgba(255,255,255,.12)}
+    .showcase{display:grid; grid-template-columns:repeat(4,1fr); gap:10px}
+    .showcase img{width:100%; aspect-ratio:1; object-fit:cover; border-radius:18px; border:1px solid var(--line); background:rgba(255,255,255,.1)}
+    .photo-strip img{width:100%; max-height:430px; object-fit:cover; border-radius:36px; border:1px solid var(--line); box-shadow:var(--shadow); filter:saturate(1.1) contrast(1.05)}
+    iframe{width:100%; border:0; border-radius:22px; background:white}
+    .map{width:min(100%, 720px); border-radius:24px; border:1px solid var(--line)}
+    footer{padding:44px 0 60px; color:var(--muted); border-top:1px solid var(--line); margin-top:40px}
+    @media (max-width: 780px){
+      .hero-grid{grid-template-columns:1fr}
+      .surreal-card{min-height:320px}
+      .card,.card.third{grid-column:span 12}
+      .dojo-list{grid-template-columns:1fr}
+      .showcase{grid-template-columns:repeat(2,1fr)}
+      .nav-inner{align-items:flex-start; flex-direction:column}
+    }
+  </style>
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">CoderDojo Tokushima</a>
+      <nav class="nav-links" aria-label="main navigation">
+        <a href="#about">About</a>
+        <a href="#event">Event</a>
+        <a href="#showcase">Showcase</a>
+        <a href="#join">Join</a>
+        <a href="#access">Access</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow">FREE PROGRAMMING DOJO</span>
+          <h1 class="glitch">Code is<br>Ninja.</h1>
+          <p class="lead">コーダー道場徳島は、子どもたちが<strong>無料でプログラミングを体験し、作品をつくり、見せびらかす</strong>ための小さな実験場です。</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="eventlist">イベント情報を見る</a>
+            <a class="btn" href="#join">参加申し込み</a>
+            <a class="btn" href="https://www.facebook.com/cdtokushima" target="_blank" rel="noopener">Facebook</a>
+          </div>
+        </div>
+        <div class="surreal-card" aria-hidden="true">
+          <img class="ninja-img" src="ninnin.png" alt="">
+          <div class="bubble">Ninja wanted.<br>失敗歓迎。創作優先。</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="event">
+      <div class="wrap grid">
+        <article class="card wide event">
+          <p class="mono">NEXT DOJO / EVENT</p>
+          <h2>第37回コーダー道場徳島 in 徳島大学常三島</h2>
+          <p>4/27 開催予定。参加・見学・メンター希望の方はフォームからお申し込みください。</p>
+          <div class="hero-actions">
+            <a class="btn primary" href="https://forms.office.com/r/vXH5dZhrbi" target="_blank" rel="noopener">参加申込</a>
+            <a class="btn" href="https://forms.office.com/r/zYGQb3FSBB" target="_blank" rel="noopener">見学・メンター申込</a>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="photo-strip">
+      <div class="wrap"><img src="takumi.png" alt="CoderDojo Tokushima activity photo"></div>
+    </section>
+
+    <section id="about">
+      <div class="wrap">
+        <div class="section-title">
+          <div>
+            <h2>What’s CoderDojo Tokushima?</h2>
+            <p class="sub">徳島の子どもたちのための、プログラミング道場。</p>
+          </div>
+        </div>
+        <div class="grid">
+          <article class="card">
+            <h3>ここでは「忍者」になる</h3>
+            <p>プログラミングを始めたい人、極めたい人、みんなで楽しくつくりたい人、作ったものを見せたい人。そんな子どもたちを、CoderDojoでは Ninja と呼びます。</p>
+          </article>
+          <article class="card">
+            <h3>無料・自主性・作品中心</h3>
+            <p>CoderDojo Tokushima はボランティアによる無償の活動です。教わるだけではなく、自分で考え、試し、作品にして、共有することを大切にします。</p>
+          </article>
+          <article class="card wide">
+            <div class="dojo-list">
+              <div>はじめての Scratch</div>
+              <div>自分だけのゲームづくり</div>
+              <div>発表・作品紹介</div>
+              <div>メンターとの相談</div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="showcase">
+      <div class="wrap grid">
+        <article class="card wide">
+          <p class="mono">SHOWCASE</p>
+          <h2>作品紹介</h2>
+          <p>道場で紹介したサンプルプログラムや、忍者のみなさんの作品を定期的に公開します。</p>
+          <div class="showcase">
+            <a href="https://scratch.mit.edu/projects/263439047/#fullscreen" target="_blank" rel="noopener"><img src="sakuhin/zousan.png" alt="Scratch project 1"></a>
+            <a href="https://scratch.mit.edu/projects/267078238/#fullscreen" target="_blank" rel="noopener"><img src="sakuhin/sugoroku.png" alt="Scratch project 2"></a>
+            <img src="blank.png" alt="coming soon">
+            <img src="blank.png" alt="coming soon">
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="join">
+      <div class="wrap grid">
+        <article class="card third">
+          <h3>01. イベントを見る</h3>
+          <p>開催日・会場・対象を確認します。</p>
+          <a href="eventlist">イベント情報</a>
+        </article>
+        <article class="card third">
+          <h3>02. 申し込む</h3>
+          <p>参加フォームに必要事項を入力します。</p>
+          <a href="https://forms.office.com/r/vXH5dZhrbi" target="_blank" rel="noopener">参加申込</a>
+        </article>
+        <article class="card third">
+          <h3>03. つくる</h3>
+          <p>PCを持ってきて、メンターと一緒に作品づくり。</p>
+        </article>
+        <article class="card wide">
+          <h2>参加申し込みフォーム</h2>
+          <iframe height="520" src="https://forms.office.com/r/vXH5dZhrbi?embed=true" allowfullscreen></iframe>
+        </article>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="wrap grid">
+        <article class="card wide">
+          <p class="mono">SCHEDULE</p>
+          <h2>スケジュール</h2>
+          <iframe height="340" src="https://calendar.google.com/calendar/embed?src=tokushima.uni.jp%40coderdojo.com&ctz=Asia%2FTokyo&showDate=0&amp;showPrint=0&amp;height=300&amp;wkst=1&amp;bgcolor=%23FFFFFF" scrolling="no"></iframe>
+        </article>
+      </div>
+    </section>
+
+    <section class="photo-strip">
+      <div class="wrap"><img src="0015_original.jpg" alt="CoderDojo Tokushima photo"></div>
+    </section>
+
+    <section id="access">
+      <div class="wrap grid">
+        <article class="card wide">
+          <p class="mono">ACCESS</p>
+          <h2>徳島大学 情報センター</h2>
+          <p>常三島キャンパス / 〒770-8506 徳島県徳島市南常三島町2-1</p>
+          <img class="map" src="map.png" alt="access map">
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <p>本サイトのソースコードは GitHub 上で公開されています。</p>
+      <p>Copyright © 2018 CoderDojo Tokushima / 徳島県徳島市南常三島町2-1 徳島大学</p>
+    </div>
+  </footer>
+</body>
+</html>
