@@ -20,7 +20,7 @@
 | とくしまキッズプログラミングコンテスト | 9月 | 小学生 | [Webサイト](https://techkidsschool.jp/grandprix/regions/tokushima/) |
 | 中高生情報学研究コンテスト | 9月 | 中学生〜高校生 | [Webサイト](https://www.ipsj.or.jp/event/event_chukousei.html) |
 | 中高生・スポーツデータ解析コンペティション | 9月 | 中学生〜高校生 | [Webサイト](https://hs.sports.ywebsys.net/) |
-| マインクラフトカップ | 9月 | 小学生〜高校生 | [Webサイト](https://minecraftcup.com/) |
+| マインクラフトカップ | 9月 | 小学生〜高校生 | [Webサイト](https://mccup.jp/) |
 | 高校生・高専生科学技術チャレンジ（JSEC） | 9月 | 高校生 | [Webサイト](https://manabu.asahi.com/jsec/) |
 | 高校生ビジネスプラン・グランプリ | 9月 | 高校生 | [Webサイト](https://www.jfc.go.jp/n/grandprix/) |
 | 日本学生科学賞 | 9月 | 中学生・高校生 | [Webサイト](https://event.yomiuri.co.jp/jssa/) |
