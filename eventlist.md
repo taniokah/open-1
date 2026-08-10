@@ -16,6 +16,7 @@
 | 日本数学オリンピック | 7月 | 中学生・高校生 | [Webサイト](https://www.imojp.org/) |
 | 統計データ分析コンペティション | 8月 | 高校生・大学生 | [Webサイト](https://www.nstac.go.jp/statcompe/) |
 | U-22プログラミングコンテスト | 8月 | 22歳以下 | [Webサイト](https://u22procon.com/) |
+| 統計グラフ全国コンクール | 9月 | 小学生〜高校生以上 | [Webサイト](https://www.sinfonica.or.jp/tokei/graph/) [徳島県](https://www.pref.tokushima.lg.jp/ippannokata/kyoiku/seishonenikusei/7313275) |
 | 徳島県小学生プログラミング大会 | 9月 | 小学生 | [Webサイト](https://www.topics.or.jp/list/tpro/top) |
 | とくしまキッズプログラミングコンテスト | 9月 | 小学生 | [Webサイト](https://techkidsschool.jp/grandprix/regions/tokushima/) |
 | 中高生情報学研究コンテスト | 9月 | 中学生〜高校生 | [Webサイト](https://www.ipsj.or.jp/event/event_chukousei.html) |
@@ -24,7 +25,6 @@
 | 高校生・高専生科学技術チャレンジ（JSEC） | 9月 | 高校生 | [Webサイト](https://manabu.asahi.com/jsec/) |
 | 高校生ビジネスプラン・グランプリ | 9月 | 高校生 | [Webサイト](https://www.jfc.go.jp/n/grandprix/) |
 | 日本学生科学賞 | 9月 | 中学生・高校生 | [Webサイト](https://event.yomiuri.co.jp/jssa/) |
-| 統計グラフ全国コンクール | | 小学生〜高校生以上 | [Webサイト](https://www.sinfonica.or.jp/tokei/graph/) [徳島県](https://www.pref.tokushima.lg.jp/ippannokata/kyoiku/seishonenikusei/7313275) |
 | U-16プログラミングコンテスト | 10月 | 小学生・中学生 | [Webサイト](https://www.anan-nct.ac.jp/event/45782/) |
 | AITeCデータサイエンスコンテスト | 10月 | 中学生・高校生・大学生・大学院生 | [Webサイト](https://ds-education.com/data-science-event/1498/) |
 | 全国情報教育コンテスト（全ぜん情じょうコン） | 11月 | 中学生〜高校生 | [Webサイト](https://zenjyocon.jp/) |
