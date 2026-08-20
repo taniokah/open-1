@@ -2,6 +2,7 @@
 
 | イベント名称 | 申込時期 | 対象者 | 概要 |
 |---|---|---|---|
+| JAPAN AI CUP 2026 中高生AI・DS探究部門 | 1月 | 中学生・高校生 | [Webサイト](https://kikaku.ai-gakkai.or.jp/article/8vFfgLvK) |
 | Coolest Projects Japan | 1月 | 18歳以下 | [Webサイト](https://coolestprojects2026.coderdojo.jp/) |
 | IPA セキュリティ・キャンプ 2026 コネクト | 1月 | 中学生・高校生・大学生 | [Webサイト](https://www.security-camp.or.jp/connect/index.html) |
 | Web×IoTメイカーズチャレンジPLUS in 徳島 (2025) | 2月 | 誰でも | [Webサイト](https://webiotmakers.github.io/2025/) |
